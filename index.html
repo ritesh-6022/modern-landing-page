@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger King - Modern Landing Page</title>
+
+    <link rel="icon" type="image/png" href="assests/burger-king.png" />
+    <!-- Linking Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="main-container">
+      <!-- Header -->
+      <header>
+        <div class="nav-logo">
+          <img src="assests/nav-logo.png" alt="Burger King" />
+          <h2>Burger King</h2>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#menu">Menu</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="mobile-only-btn">
+              <button class="strt-btn" onclick="openModal()">
+                Get Started
+              </button>
+            </li>
+            <span class="close-menu">&times; </span>
+          </ul>
+        </nav>
+        <div class="desktop-btn">
+          <button class="strt-btn" id="start">Get Started</button>
+        </div>
+        <div class="menu-toggle" id="menuBtn">☰</div>
+      </header>
+      <div class="overlay" id="overlay"></div>
+      <!-- Start Modal -->
+      <div class="get-started-modal">
+        <span>&times; </span>
+        <div class="heading-modal">
+          <h3>Login</h3>
+          <p>Use email, instead</p>
+        </div>
+        <!-- Login/Signup Form -->
+        <form action="">
+          <label for="">Mobile Number * </label>
+          <input type="text" id="mobile" placeholder="Enter mobile number" />
+          <label id="passwordLabel">Password * </label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <div id="extraFields" style="display: none">
+            <label>Name *</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+          </div>
+          <button type="button" id="loginBtn">Login</button>
+          <p>
+            Don't have an account?
+            <a href="#" id="toggleForm">Create an account</a>
+          </p>
+        </form>
+      </div>
+
+      <!-- Main -->
+      <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="section-content">
+            <!-- LEFT SIDE -->
+            <div class="hero-details">
+              <h2 class="title">Taste the Flame</h2>
+              <h3 class="subtitle">
+                Unleash your hunger with Jamshedpur's most loved flame-grilled
+                burgers!
+              </h3>
+              <p class="description">
+                Step into a world where every burger is grilled to perfection
+                and every topping tells a story of quality. Our kitchen is
+                dedicated to bringing you a burst of bold flavors that make
+                every hangout more memorable. Whether you're with friends or
+                treating yourself, our special recipes are guaranteed to spark
+                joy in every bite.
+              </p>
+              <div class="buttons">
+                <a href="#menu" class="button order-now">Order Now</a>
+                <a href="#contact" class="button contact-us">Contact Us</a>
+              </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="hero-image-wrapper">
+              <img src="assests/hero-image.png" alt="Hero" class="hero-image" />
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+          <div class="section-content">
+            <div class="about-image-wrapper">
+              <img src="assests/about.png" alt="About" class="about-image" />
+            </div>
+            <div class="about-details">
+              <h2 class="section-title">About Us</h2>
+              <div class="title-underline"></div>
+              <p class="text">
+                At Burger King in Jamshedpur, India, we are passionate about
+                crafting flame-grilled burgers that deliver bold flavors in
+                every bite. Our space is designed to offer a lively and
+                comfortable dining experience where food meets happiness. From
+                quick cravings to memorable hangouts, we focus on quality
+                ingredients, exceptional taste, and customer satisfaction that
+                keeps you coming back for more.
+              </p>
+              <div class="social-link-list">
+                <a href="https://www.facebook.com/" class="social-link"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/" class="social-link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.twitter.com/" class="social-link"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+          <div class="container">
+            <h2 class="section-title">OUR MENU</h2>
+            <div class="title-underline"></div>
+
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-image">
+                  <img
+                    src="assests/burger-frenchfries.png"
+                    alt="Burger FrenchFries"
+                  />
+                </div>
+                <h3>Burger FrenchFries</h3>
+                <p>
+                  Our signature flame-grilled beef patty topped with juicy
+                  tomatoes and fresh lettuce.
+                </p>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-image">
+                  <img src="assests/crispy_chicken.png" alt="Crispy Chicken" />
+                </div>
+                <h3>Crispy Chicken</h3>
+                <p>
+                  Tender, juicy chicken breast seasoned to perfection with a
+                  crispy coating.
+                </p>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-image">
+                  <img src="assests/cold-beverages.png" alt="Cold Beverages" />
+                </div>
+                <h3>Cold Beverages</h3>
+                <p>
+                  Stay refreshed with our wide range of chilled soft drinks and
+                  shakes.
+                </p>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-image">
+                  <div class="combo-badge">Best Value</div>
+                  <img src="assests/special-combo.png" alt="Special Combos" />
+                </div>
+                <h3>Special Combos</h3>
+                <p>
+                  Your favorite burger, large fries, and a drink at an
+                  unbeatable price.
+                </p>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-image">
+                  <img src="assests/sides.png" alt="Sides" />
+                </div>
+                <h3>Sides & Snacks</h3>
+                <p>
+                  Crunchy onion rings, cheesy nuggets, and our world-famous
+                  French fries.
+                </p>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-image">
+                  <img src="assests/desserts.png" alt="Desserts" />
+                </div>
+                <h3>Sweet Treats</h3>
+                <p>
+                  End your meal on a sweet note with our delicious soft serves
+                  and pies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallary Section -->
+        <section class="gallery-section" id="gallery">
+          <div class="container">
+            <h2 class="section-title">OUR GALLERY</h2>
+            <div class="title-underline"></div>
+
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=400&h=400&auto=format&fit=crop"
+                  alt="Burger King Whopper"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1594179047519-f347310d3322?q=80&w=400&h=400&auto=format&fit=crop"
+                  alt="Crispy Chicken Burger"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?q=80&w=400&h=400&auto=format&fit=crop"
+                  alt="Flame Grilled Patty"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=400&h=400&auto=format&fit=crop"
+                  alt="French Fries and Shakes"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?q=80&w=400&h=400&auto=format&fit=crop"
+                  alt="Cold Beverage and Burger Combo"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=400&h=400&auto=format&fit=crop"
+                  alt="Onion Rings and Nuggets"
+                />
+                <div class="gallery-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+          <div class="container">
+            <h2 class="section-title">CONTACT US</h2>
+            <div class="title-underline"></div>
+
+            <div class="contact-wrapper">
+              <div class="contact-info">
+                <div class="info-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Main Road, Bistupur, Jamshedpur, Jharkhand 831001</p>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>support@burgerkingjamshedpur.com</p>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+91 98765 43210</p>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-clock"></i>
+                  <div>
+                    <p>Monday - Friday: 9:00 AM - 11:00 PM</p>
+                    <p>Saturday: 10:00 AM - 11:00 PM</p>
+                    <p>Sunday: Closed</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-globe"></i>
+                  <p>www.burgerkingjamshedpur.com</p>
+                </div>
+              </div>
+
+              <div class="contact-form">
+                <form id="contactForm">
+                  <input type="text" placeholder="Your Name" required />
+                  <input type="email" placeholder="Your Email" required />
+                  <textarea
+                    placeholder="Your Message"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="footer-container">
+          <p>&copy; 2026 Burger King Jamshedpur</p>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.twitter.com/"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Refund Policy</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
